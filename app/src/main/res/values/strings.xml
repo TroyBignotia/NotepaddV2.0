@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Notepadd</string>
+    <string name="date">"Date"</string>
+    <string name="reminder">"Reminder"</string>
+    <string name="Title">Title"</string>
+    <string name="Note">Note"</string>
+    <string name="Description">"Description"</string>
+    <string name="EditedDate">"Edited Date"</string>
+    <string name="BackgroundColor">"BackgroundColor"</string>
+    <string name="Category">"Category"</string>
+    <string name="FontStyle">"Font Style"</string>
+    <string name="Heading1">"Heading1"</string>
+    <string name="Heading2">"Heading2</string>
+    <string name="Paragraph">"Paragraph"</string>
+    <string name="Bold">"Bold"</string>
+    <string name="Intent">"Intent"</string>
+    <string name="Underline">"Underline"</string>
+    <string name="More">"More"</string>
+    <string name="CornelNotesFormat">"Cornel Notes Format"</string>
+    <string name="KWLNotes">"K-W-L (Know-What-Learned) Note"</string>
+    <string name="CornelNotes">"Cornel Notes"</string>">
+    <string name="Question">"Question"</string>
+    <string name="inputQuestion">"Question1"</string>
+    <string name="inputKeyword">"Keyword1"</string>
+    <string name="Keyword">"Keyword"</string>
+    <string name="Conclusion">"Description"</string>>
+    <string name="kwlnotes">"K-W-L Notes"</string>
+    <string name="know">"Know"</string>
+    <string name="knowkey">"Key1"</string>
+    <string name="what">"What"</string>
+    <string name="whatkey">"Question1"</string>
+    <string name="learned">"Learned"</string>
+    <string name="learnedkey">"Key1"</string>
+
+
+
+
+
+
+
+</resources>

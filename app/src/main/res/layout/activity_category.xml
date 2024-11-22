@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity2">
+
+    <ScrollView
+
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_arrow_left"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/ic_bgprofile"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@drawable/ic_profile"
+                app:layout_constraintBottom_toBottomOf="@id/imageBack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageBack" />
+
+            <ImageView
+                android:id="@+id/imageBell"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="60dp"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@drawable/ic_bell"
+                app:layout_constraintBottom_toBottomOf="@id/imageBack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageBack" />
+
+            <ImageView
+                android:id="@+id/imagePin"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="95dp"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@drawable/ic_pin"
+                app:layout_constraintBottom_toBottomOf="@id/imageBack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageBack" />
+
+
+
+            <EditText
+                android:id="@+id/inputNoteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:hint="@string/Title"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:gravity="top"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:textColor="@color/titlegray"
+                android:textColorHint="@color/titlegray"
+                android:textSize="35sp"
+                app:layout_constraintTop_toBottomOf="@id/imageBack" />
+
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/titlegray"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="@id/imagePin"
+                app:layout_constraintStart_toStartOf="@+id/imagePin"
+                app:layout_constraintTop_toBottomOf="@+id/imagePin" />
+
+            <EditText
+                android:id="@+id/inputNote"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="15dp"
+                android:background="@null"
+                android:hint="@string/Note"
+                android:gravity="top"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:minHeight="50dp"
+                android:textColor="@color/titlegray"
+                android:textColorHint="@color/titlegray"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutQuickActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/ic_bottombg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="70dp"
+        app:layout_anchor="@+id/scrollView2"
+        app:layout_anchorGravity="bottom|center" />
+
+    <ImageView
+        android:id="@+id/categoryfolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="110dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/category_folder"
+        app:layout_anchor="@id/layoutQuickActions"
+        app:layout_anchorGravity="bottom"/>
+
+    <TextView
+        android:id="@+id/Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="110dp"
+        android:text="@string/Category"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_anchor="@id/layoutQuickActions"
+        app:layout_anchorGravity="bottom"
+        />
+
+    <ImageView
+        android:id="@+id/category1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="80dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/category_personal"
+        app:layout_anchor="@id/layoutQuickActions"
+        app:layout_anchorGravity="bottom"/>
+
+    <ImageView
+        android:id="@+id/category2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="80dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/category_work"
+        app:layout_anchor="@id/layoutQuickActions"
+        app:layout_anchorGravity="bottom"/>
+
+    <ImageView
+        android:id="@+id/category3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="195dp"
+        android:layout_marginBottom="80dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/category_exercise"
+        app:layout_anchor="@id/layoutQuickActions"
+        app:layout_anchorGravity="bottom"/>
+
+    <ImageView
+        android:id="@+id/category4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="80dp"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/category_finance"
+        android:textSize="16sp"
+        app:layout_anchor="@id/layoutQuickActions"
+        app:layout_anchorGravity="bottom" />
+
+    <ImageView
+        android:id="@+id/category5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="45dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/category_assignment"
+        app:layout_anchor="@id/layoutQuickActions"
+        app:layout_anchorGravity="bottom"/>
+
+    <ImageView
+        android:id="@+id/category6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="45dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/category_genmath"
+        app:layout_anchor="@id/layoutQuickActions"
+        app:layout_anchorGravity="bottom"/>
+
+    <ImageView
+        android:id="@+id/category7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="205dp"
+        android:layout_marginBottom="45dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/category_fabm"
+        app:layout_anchor="@id/layoutQuickActions"
+        app:layout_anchorGravity="bottom"/>
+
+    <ImageView
+        android:id="@+id/category8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="295dp"
+        android:layout_marginBottom="45dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/category_physics"
+        app:layout_anchor="@id/layoutQuickActions"
+        app:layout_anchorGravity="bottom"/>
+
+    <ImageView
+        android:id="@+id/category9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/category_add_here"
+        app:layout_anchor="@id/layoutQuickActions"
+        app:layout_anchorGravity="bottom"/>
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
